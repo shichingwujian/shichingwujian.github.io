@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="zhu的个人主页 - 前端开发工程师">
+  <title>zhu | 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 跳转到主内容，方便键盘用户 -->
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="主导航">
+      <a class="nav__brand" href="#top">Zhu</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="打开导航菜单">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 顶部介绍 -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__avatar" aria-hidden="true">ZS</div>
+        <h1 class="hero__name">祝天璞</h1>
+        <p class="hero__title">前端开发工程师 · Web 爱好者</p>
+        <p class="hero__tagline">我热衷于构建简洁、易用且无障碍的网页体验。</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">查看项目</a>
+          <a class="btn btn--outline" href="#contact">联系我</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title">关于我</h2>
+        <div class="about">
+          <p>
+            你好！我是zhu，一名专注于 Web 前端的开发者。我喜欢把复杂的问题拆解成简单的方案，
+            重视代码的可维护性与用户体验，也关注网页的无障碍（Accessibility）与性能优化。
+          </p>
+          <p>
+            工作之余，我喜欢阅读技术博客、参与开源项目，也会写一些工具来提升日常开发效率。
+            我相信：好的产品是设计与工程共同打磨的结果。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title">技能</h2>
+        <ul class="skills">
+          <li class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">⌗</div>
+            <h3>HTML / CSS</h3>
+            <p>语义化结构、响应式布局、Flexbox / Grid、动画与过渡。</p>
+          </li>
+          <li class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">ƒ</div>
+            <h3>JavaScript</h3>
+            <p>ES6+、DOM 操作、异步编程、模块化与常见设计模式。</p>
+          </li>
+          <li class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">⚒</div>
+            <h3>工程化</h3>
+            <p>Git、代码规范、性能优化、基础的构建与自动化流程。</p>
+          </li>
+          <li class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">☺</div>
+            <h3>无障碍与 UX</h3>
+            <p>键盘可达、对比度、屏幕阅读器友好、以用户为中心的设计。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 项目经历 -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title">项目经历</h2>
+        <div class="projects">
+          <article class="project-card">
+            <h3>个人任务管理器</h3>
+            <p>
+              一个纯原生 JavaScript 实现的待办事项应用，支持本地存储、拖拽排序与深色模式。
+              重点练习了状态管理与无障碍键盘操作。
+            </p>
+            <ul class="project-card__tags">
+              <li>JavaScript</li>
+              <li>LocalStorage</li>
+              <li>A11y</li>
+            </ul>
+            <a class="project-card__link" href="#" aria-label="查看个人任务管理器项目详情（示例链接）">查看详情 →</a>
+          </article>
+
+          <article class="project-card">
+            <h3>天气小站</h3>
+            <p>
+              一个极简的天气查询页面，使用 Fetch API 获取数据，支持城市搜索与错误提示。
+              关注加载状态与失败重试体验。
+            </p>
+            <ul class="project-card__tags">
+              <li>Fetch API</li>
+              <li>响应式</li>
+              <li>UX</li>
+            </ul>
+            <a class="project-card__link" href="#" aria-label="查看天气小站项目详情（示例链接）">查看详情 →</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Markdown 笔记</h3>
+            <p>
+              一个轻量的在线 Markdown 笔记工具，支持实时预览与导出 HTML。
+              自己实现了简单的解析逻辑，不依赖第三方库。
+            </p>
+            <ul class="project-card__tags">
+              <li>Markdown</li>
+              <li>工具类</li>
+              <li>原生 JS</li>
+            </ul>
+            <a class="project-card__link" href="#" aria-label="查看 Markdown 笔记项目详情（示例链接）">查看详情 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title">联系方式</h2>
+        <p class="contact__lead">欢迎通过以下方式与我交流：</p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon" aria-hidden="true">✉</span>
+            <a href="mailto:zhangsan@example.com">zhangsan@example.com</a>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">⌂</span>
+            <a href="https://github.com/zhangsan" target="_blank" rel="noopener noreferrer">github.com/zhangsan</a>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">✎</span>
+            <a href="https://zhangsan.blog.example.com" target="_blank" rel="noopener noreferrer">个人博客</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Zhu · 使用原生 HTML / CSS / JavaScript 构建</p>
+      <a class="back-to-top" href="#top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
